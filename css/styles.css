@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #52b788;
+}
+
+.main-game{
+  height: 90vh;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.genius{
+  display: grid;
+  grid-template-areas: "blue red"
+  "yellow green";
+  grid-gap: 1rem;
+  border: 1rem solid rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  border-radius: 100%;
+  width: 25rem;
+  height: 25rem;
+  transition: transform 1s ease-in;
+}
+
+.blue{
+  grid-area: blue;
+  background: rgb(75, 75, 255);
+  border-top-left-radius: 100%;
+}
+
+.red{
+  grid-area: red;
+  background: rgb(255, 75, 75);
+  border-top-right-radius: 100%;
+}
+
+.yellow{
+  grid-area: yellow;
+  background: rgb(255, 255, 75);
+  border-bottom-left-radius: 100%;
+}
+
+.green{
+  grid-area: green;
+  background: rgb(75, 255, 75);
+  border-bottom-right-radius: 100%;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.selected{
+  opacity: 0.4;
+}
+
+img{
+  max-width: 10rem;
+}
+
+.left-arrow{
+  transform: rotate(135deg);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #52b788;
+}
+
+header{
+  height: 10vh;
+}
+
+h1, h3{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.main-game{
+  height: 90vh;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.genius{
+  display: grid;
+  grid-template-areas: "blue red"
+  "yellow green";
+  grid-gap: 1rem;
+  border: 1rem solid rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  border-radius: 100%;
+  width: 25rem;
+  height: 25rem;
+  transition: transform .3s ease-in;
+}
+
+.left-arrow{
+  transform: rotate(135deg);
+}
+
+.right-arrow{
+  transform: rotate(330deg);
+}
+
+.blue{
+  grid-area: blue;
+  background: rgb(75, 75, 255);
+  border-top-left-radius: 100%;
+}
+
+.red{
+  grid-area: red;
+  background: rgb(255, 75, 75);
+  border-top-right-radius: 100%;
+}
+
+.yellow{
+  grid-area: yellow;
+  background: rgb(255, 255, 75);
+  border-bottom-left-radius: 100%;
+}
+
+.green{
+  grid-area: green;
+  background: rgb(75, 255, 75);
+  border-bottom-right-radius: 100%;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.selected{
+  opacity: 0.4;
+}
+
+img.selected{
+  filter: contrast(200%);
+}
+
+img{
+  max-width: 10rem;
+}
